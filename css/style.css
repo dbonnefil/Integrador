@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+   }
+
+/* Estilo del Navegador */
+.fijo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8;
+}
+
+.navegador {
+    height: 4rem;
+    
+}
+
+.moverd {
+    padding-left: 15rem;
+}
+
+.moverdreg {
+    padding-left: 3rem !important;
+}
+
+.compra {
+    color: rgb(130, 230, 130) !important;
+}
+
+/* Estilo del Carusel */
+.carousel-item {
+    height: calc(100vh - 4rem) !important;
+    filter: brightness(60%);         
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+}
+
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 8%;
+    bottom: 100px;
+    left: 15%;
+    z-index: 7;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: right;
+}
+
+.carousel-caption p {    
+    margin-bottom: 0px !important;
+}
+  
+.img123 {
+    height: calc(100vh - 4rem) !important;
+    object-fit: cover;
+}
+
+.botones {
+    display: flex;
+    display: inline-block;
+    justify-content: right;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.orador {
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 5%;
+    font-size: 16px;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+}
+.orador:hover {
+    background: rgb(243, 237, 237);
+    color: rgb(43, 42, 42) !important;
+}
+
+.tickets {
+    border: none;
+    padding: 7px;
+    border-radius: 5%;
+    font-size: 16px;
+    color: white !important;
+    background-color: rgb(13, 165, 13) !important;;
+    text-align: center;
+    text-decoration: none;
+}
+.tickets:hover{
+    background: floralwhite !important;
+    color: rgb(13, 165, 13) !important;
+    border: 2px solid rgb(13, 165, 13);
+}
+
+/* Estilo de las Cards */
+.p1 {
+    margin-bottom: 0px !important;
+}
+
+.centrado {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonc {
+    font-size: 12px ;
+    font-weight: bolder;
+    padding: 0px;
+}
+
+.textocard{
+    font-size: 12px;
+}
+
+/* Estilo Pantalla Dividida */
+.dividida {
+    height: 70vh;
+}
+
+.izquierda{
+    background-image: url(../imagenes/honolulu.jpg);
+    /*background-image: url(honolulu.jpg);*/
+    background-size: cover;
+}
+
+.derecha{
+    font-size: 13px;
+    line-height: 2em !important;
+}
+
+/* Estilo del Formulario */
+.colorbtn{
+    background-color: rgb(13, 165, 13) ;
+    color: white;
+}
+
+#mycontainer2 {
+    width: 50% !important;
+}
+
+.p2 {
+    margin-bottom: 0px !important;
+    font-size: 12px !important;
+}
+
+.p3{
+    font-size: 13px !important;
+}
+
+/* Estilo del Footer */
+#pie{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(20, 64, 71);
+}
+
+#pie a {
+    font-size: 14px;
+    color: white;
+}
+#pie a:hover{
+    color: grey;
+}
+
+span {
+    display: block;
+}
+
+/* Estilo para formulario de venta de tickets */
+
+#mycontainer {
+    width: 50% !important;
+}
+
+.tipodscto {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.documentacion {
+    color: darkgrey;
+    font-size: 13px !important;
+}
+
+.porcent {
+    font-weight: bold;
+}
+
+.borde {
+    border-width: 2px !important;
+    border-left-width: 2px !important;
+    border-left-style: solid !important;
+}
+
+.botonesform {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.botonpagar {
+    background-color: lightblue;
+    color: navy;
+    text-align: left;
+}
+
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input-error {
+	font-size: 10px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__mensaje {
+	height: 40px;
+	line-height: 40px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+    margin-bottom: 1rem;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block !important;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1 !important;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1 !important;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929 !important;
+}
+
+
+/* Estilo para equipos con menos de 375 pixeles */
+@media (max-width: 375px){ 
+.navbar-brand img {
+    width: 80px !important;
+    height: auto;
+}
+.navbar-brand {
+    font-size: 1rem;
+}
+
+.navbarinic {
+    z-index: 15;
+}
+
+.carousel-caption {
+    right: 5%;
+    bottom: 50px;
+    left: 5%;
+    font-size: 10px !important;
+} 
+
+.carousel-caption h2{
+    font-size: 14px;
+}
+
+.orador {
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 5%;
+    font-size: 10px;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tickets {
+    border: none;
+    padding: 4px;
+    border-radius: 5%;
+    font-size: 10px;
+    color: white !important;
+    background-color: rgb(13, 165, 13) !important;;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dividida{
+    height: 50vh;
+    margin-bottom: 10px;
+}
+
+.derecha{
+    font-size: 10px !important;
+    line-height: 1.4em !important;
+}
+
+.derecha h3{
+    font-size: 16px !important;
+}
+
+#mycontainer {
+    width: 80% !important;
+}
+
+.dblockmediaq {
+    display: block !important;
+}
+}
